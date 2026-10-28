@@ -1,11 +1,12 @@
 {
   "expo": {
-    "name": "kafe-kucing-javascript",
+    "name": "Kafe Kucing",
     "slug": "kafe-kucing-javascript",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "backgroundColor": "#FFF8F0",
     "ios": {
       "supportsTablet": true
     },
