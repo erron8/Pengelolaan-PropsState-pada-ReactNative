@@ -13,12 +13,21 @@ const DAFTAR_MENU = [
 export default function App() {
   const [totalPesanan, setTotalPesanan] = useState(0);
 
+  const tambahPesanan = () => {
+    setTotalPesanan((total) => total + 1);
+  };
+
   return (
     <View style={styles.container}>
       <Text style={styles.judul}>Kafe Kucing</Text>
       <OrderSummary totalCount={totalPesanan} />
       {DAFTAR_MENU.map((menu) => (
-        <MenuItem key={menu.id} nama={menu.nama} harga={menu.harga} />
+        <MenuItem
+          key={menu.id}
+          nama={menu.nama}
+          harga={menu.harga}
+          onTambahPesanan={tambahPesanan}
+        />
       ))}
       <StatusBar style="dark" />
     </View>
