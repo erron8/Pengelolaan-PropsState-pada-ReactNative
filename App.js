@@ -21,8 +21,7 @@ export default function App() {
     <View style={styles.layar}>
       <ScrollView contentContainerStyle={styles.container}>
         <Text style={styles.sapaan}>SELAMAT DATANG DI</Text>
-        <Text style={styles.judul}>Kafe Kucing 🐾</Text>
-        <Text style={styles.deskripsi}>Pilih teman ngemilmu hari ini.</Text>
+        <Text style={styles.judul}>Kafe Kucing</Text>
         <OrderSummary totalCount={totalPesanan} />
         <Text style={styles.subjudul}>Menu kafe</Text>
         {DAFTAR_MENU.map((menu) => (
@@ -43,7 +42,6 @@ const styles = StyleSheet.create({
   layar: { flex: 1, backgroundColor: '#FFF8F0' },
   container: { paddingHorizontal: 24, paddingTop: 72, paddingBottom: 40, width: '100%', maxWidth: 520, alignSelf: 'center' },
   sapaan: { color: '#9D664B', fontSize: 12, fontWeight: 'bold', letterSpacing: 2 },
-  judul: { color: '#3A241B', fontSize: 32, fontWeight: 'bold', marginTop: 8 },
-  deskripsi: { color: '#765D50', fontSize: 16, marginTop: 8, marginBottom: 28 },
+  judul: { color: '#3A241B', fontSize: 32, fontWeight: 'bold', marginTop: 8, marginBottom: 28 },
   subjudul: { color: '#3A241B', fontSize: 22, fontWeight: 'bold', marginTop: 32, marginBottom: 14 },
 });
