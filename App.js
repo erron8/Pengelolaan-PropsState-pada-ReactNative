@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import OrderSummary from './components/OrderSummary';
+import MenuItem from './components/MenuItem';
 
 const DAFTAR_MENU = [
   { id: '1', nama: 'Kopi Susu Catnip', harga: 20000 },
@@ -17,7 +18,7 @@ export default function App() {
       <Text style={styles.judul}>Kafe Kucing</Text>
       <OrderSummary totalCount={totalPesanan} />
       {DAFTAR_MENU.map((menu) => (
-        <Text key={menu.id}>{menu.nama} - Rp {menu.harga}</Text>
+        <MenuItem key={menu.id} nama={menu.nama} harga={menu.harga} />
       ))}
       <StatusBar style="dark" />
     </View>
