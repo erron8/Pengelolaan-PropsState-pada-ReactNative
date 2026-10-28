@@ -12,7 +12,7 @@ export default function MenuItem({ nama, harga, onTambahPesanan }) {
   return (
     <View>
       <Text>{nama}</Text>
-      <Text>Rp {harga}</Text>
+      <Text>Rp {harga.toLocaleString('id-ID')}</Text>
       <Text>Jumlah: {qty}</Text>
       <Button title="Tambah Pesanan" onPress={handleTambah} />
     </View>
