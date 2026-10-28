@@ -39,3 +39,8 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# local generated files
+/output/pdf/
+/screenshots/
+/scripts/
